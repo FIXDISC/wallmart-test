@@ -12,7 +12,8 @@ npm start
 
 La aplicación debiera estar corriendo en [localhost:5000](http://localhost:5000/).
 
-## Lanzando a Heroku
+## Despliegue en Heroku
+Asegúrate de tener instalado [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
 ```
 heroku create wallmart-test
