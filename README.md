@@ -4,7 +4,7 @@
 Asegúrese de tener instalado [Node.js](http://nodejs.org/) y [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
-git clone https://github.com/FIXDISC/wallmart-test  # or clone your own fork
+git clone https://github.com/FIXDISC/wallmart-test  # o crea tu propio fork
 cd wallmart-test
 npm install
 npm start
