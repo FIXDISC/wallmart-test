@@ -20,3 +20,8 @@ git push heroku master
 heroku open
 ```
 
+## Test Unitarios
+
+```
+/test
+```
