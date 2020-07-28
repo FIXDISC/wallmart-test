@@ -1,7 +1,7 @@
 # wallmart-test
-## Running Locally
+## Ejecutar en Máquina Local
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+Asegúrese de tener instalado [Node.js](http://nodejs.org/) y [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
 git clone https://github.com/FIXDISC/wallmart-test  # or clone your own fork
@@ -10,9 +10,9 @@ npm install
 npm start
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+La aplicación debiera estar corriendo en [localhost:5000](http://localhost:5000/).
 
-## Deploying to Heroku
+## Lanzando a Heroku
 
 ```
 heroku create wallmart-test
