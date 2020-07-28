@@ -1,0 +1,82 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    background-color: #e7e5e5;
+}
+.logo {
+    width: 100px;
+    top: 1rem;
+    left: .5rem;
+    float: left;
+    margin:10px;
+}
+.input1{
+    border-radius: 10px;
+    margin: 10px;
+    float: left;
+}
+.resultados{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.prod{
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 250px;
+    border:1px solid #fdfdfd;
+    background-color: #FFF;
+    text-align: center;
+}
+.img1{
+    padding: 10px;
+    width: 180px;
+    height: 100px;
+    background-color: #dfdfdf;
+    margin: auto 0;
+    text-align: center;
+}
+
+div{
+    margin: auto 0;
+}
+
+.brand{
+    float: left;
+    font-weight: bold;
+}
+
+.desc{
+    float: left;
+}
+
+.price{
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+}
+
+.descuento{
+    top:-40px;
+    float: left;
+    width:25px;
+    height: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    color:#FFF;
+    background-color: red;
+    padding: 5px;
+    margin-left: 5px;
+}
+.ant{
+    float: left;
+    color: #5a5a5a;
+    text-decoration: line-through;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<title>Wallmart-Test</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/componentes.js"></script>
+<html>
+    <body style="margin:0">
+        <div style="width: 100%;background-color:#012a4b;height: 20px;"></div>
+        <div style="width: 100%; background-color:#0071ce; height: 50px;">
+            <img src="img/logo.svg" alt="Lider.cl" class="logo">
+            <input type="text" class="input1" onchange="busca(this.value)">
+        </div>
+        <div id="total" class="resultados">
+            <div id="count" style="float: left;"></div>
+            <div style="float: left;">&nbsp;Resultados para&nbsp;</div>
+            <div id="txt" style="float:left; font-weight:bold;"></div>
+        </div>
+        <div id="res" class="resultados"></div>
+    </body>
+</html>
+<script>
+    carga_data();
+ function carga_data(){
+    fetch("data/01-products.json")
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(myJson) {
+            data = myJson;
+            
+        });
+ }
+</script>

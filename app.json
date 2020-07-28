@@ -1,0 +1,7 @@
+{
+  "name": "Node.js",
+  "description": "Node.js app y Express 4",
+  "repository": "https://github.com/FIXDISC/wallmart-test.git",
+  "logo": "",
+  "keywords": ["node", "express", "static"]
+}

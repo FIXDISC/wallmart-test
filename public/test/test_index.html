@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Test Suite</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.10.1.css">
+  </head>
+  <body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.10.1.js"></script>
+    <script src="../js/componentes.js"></script>
+</body>
+</html>
+
+<script>
+    //const polindromo = polindromo(txt);
+    QUnit.module('POLINDROMO', function() {
+      QUnit.test('TEXTO TRUE', function(assert) {
+        assert.equal(polindromo("abcdcba"), true, 'abcdcba');
+      });
+      QUnit.test('TEXTO FALSE', function(assert) {
+        assert.equal(polindromo("abcd"), false, 'abcd');
+      });
+      QUnit.test('NUMERO UNICO TRUE', function(assert) {
+        assert.equal(polindromo(1), true, '1');
+      });
+      QUnit.test('NUMEROS TRUE', function(assert) {
+        assert.equal(polindromo(121), true, '121');
+      });
+      QUnit.test('NUMEROS FALSE', function(assert) {
+        assert.equal(polindromo(123), false, '123');
+      });
+    });
+    QUnit.module('BUSCA', function() {
+      QUnit.test('TEXTO VACIO', function(assert) {
+        assert.equal(busca(1), "", 'TODOS');
+      });
+    });
+  </script>
