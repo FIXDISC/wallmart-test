@@ -17,25 +17,26 @@
 <script>
     //const polindromo = polindromo(txt);
     QUnit.module('POLINDROMO', function() {
-      QUnit.test('TEXTO TRUE', function(assert) {
-        assert.equal(polindromo("abcdcba"), true, 'abcdcba');
-      });
-      QUnit.test('TEXTO FALSE', function(assert) {
-        assert.equal(polindromo("abcd"), false, 'abcd');
-      });
-      QUnit.test('NUMERO UNICO TRUE', function(assert) {
-        assert.equal(polindromo(1), true, '1');
-      });
-      QUnit.test('NUMEROS TRUE', function(assert) {
-        assert.equal(polindromo(121), true, '121');
-      });
-      QUnit.test('NUMEROS FALSE', function(assert) {
-        assert.equal(polindromo(123), false, '123');
-      });
-    });
-    QUnit.module('BUSCA', function() {
-      QUnit.test('TEXTO VACIO', function(assert) {
-        assert.equal(busca(1), "", 'TODOS');
-      });
+        QUnit.test('TEXTO TRUE', function(assert) {
+          assert.equal(polindromo("abcdcba"), true, 'abcdcba');
+        });
+        QUnit.test('TEXTO FALSE', function(assert) {
+          assert.equal(polindromo("abcd"), false, 'abcd');
+        });
+        QUnit.test('NUMERO UNICO TRUE', function(assert) {
+          assert.equal(polindromo(1), true, '1');
+        });
+        QUnit.test('NUMEROS TRUE', function(assert) {
+          assert.equal(polindromo(121), true, '121');
+        });
+        QUnit.test('NUMEROS FALSE', function(assert) {
+          assert.equal(polindromo(123), false, '123');
+        });
+        QUnit.test('TEXTO MAYÚSCULAS y MINUSCULAS', function(assert) {
+          assert.equal(polindromo("sAaS"), true, 'sAaS');
+        });
+        QUnit.test('TEXTO CRACTERES ESPECIALES', function(assert) {
+          assert.equal(polindromo(`/''-"""#`), false, `/''-"""#`);
+        });
     });
   </script>

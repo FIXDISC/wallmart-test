@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
 })
 
 app.get('/test', function(request, response) {
-  response.redirect('public/test/test_index.html')
+  response.redirect('../test/test_index.html')
 })
 
 app.listen(app.get('port'), function() {

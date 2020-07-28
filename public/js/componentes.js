@@ -48,11 +48,11 @@ function muestra_res(res,txt){
             </div>`
         }
     )
-    document.getElementById("res").innerHTML = html
+    document.getElementById("res") ? document.getElementById("res").innerHTML = html : null
     console.log("POLI:  "+poli)
 }
 
 function polindromo(txt){
-    txt=txt.toString();
+    txt=txt.toString().toLowerCase();
     return txt == txt.split('').reverse().join('');
 }
