@@ -23,11 +23,11 @@ heroku open
 ### URL Demo
 [wallmart-test.herokuapp.com](https://wallmart-test.herokuapp.com/)
 
-![Screenshot](https://gestor-it.com/wallmart/wallmart1.jpg)
+![Screenshot](public/img/wallmart1.jpg)
 
 
 ### URL Tests Unitarios
 [wallmart-test.herokuapp.com/test](https://wallmart-test.herokuapp.com/test)
 
-![Screenshot](https://gestor-it.com/wallmart/wallmart2.jpg)
+![Screenshot](public/img/wallmart2.jpg)
 
