@@ -29,5 +29,5 @@ heroku open
 ### URL Tests Unitarios
 [wallmart-test.herokuapp.com/test](https://wallmart-test.herokuapp.com/test)
 
-![Screenshot](public/img/wallmart2.jpg)
+![Screenshot](public/img/wallmart1.jpg)
 
