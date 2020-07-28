@@ -1,16 +1,21 @@
 function busca(txt){
-    txt = txt.toString().trim();
-    document.getElementById("res").innerHTML =""
-    document.getElementById("txt").innerHTML=txt
-    var filtro = data.filter(
-        a=>a.description.toLowerCase().indexOf(txt)!==-1 || 
-        a.brand.toLowerCase().indexOf(txt)!==-1  ||
-        a.id==txt
-        );
-    //alert(filtro[0].id)
-    document.getElementById("count").innerHTML= filtro.length
-    if(filtro.length!=0){
-        muestra_res(filtro,txt);
+    document.getElementById("res").innerHTML = "" 
+    if( (isNaN(txt) && (txt.length<3)) ){  // Devuelve false si texto es menor que 3 char
+        return false
+    }else{
+        txt = txt.toString().trim();
+        document.getElementById("res").innerHTML =""
+        document.getElementById("txt").innerHTML=txt
+        var filtro = data.filter(
+            a=>a.description.toLowerCase().indexOf(txt)!==-1 || 
+            a.brand.toLowerCase().indexOf(txt)!==-1  ||
+            a.id==txt
+            );
+        //alert(filtro[0].id)
+        document.getElementById("count").innerHTML= filtro.length
+        if(filtro.length!=0){
+            muestra_res(filtro,txt);
+        }
     }
 }
 

@@ -39,4 +39,12 @@
           assert.equal(polindromo(`/''-"""#`), false, `/''-"""#`);
         });
     });
+    QUnit.module('BUSCA', function() {
+        QUnit.test('TEXTO MENOR < 3', function(assert) {
+          assert.equal(polindromo("ab"), false, 'ab');
+        });
+        QUnit.test('NUMERO DIGITOS < 3', function(assert) {
+          assert.equal(polindromo("1"), true, '1');
+        });
+    });
   </script>
